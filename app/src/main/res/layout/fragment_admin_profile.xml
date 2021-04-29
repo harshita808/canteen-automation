@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D92435">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fastfood"/>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cafeteria"/>
+
+    <Button
+        android:layout_below="@id/imageView1"
+        android:id="@+id/cafe_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Edit Cafe Details "
+      android:onClick="editcafede"
+        android:textAllCaps="false"
+        android:padding="5dp"
+        android:layout_marginTop="60dp"
+        android:textColor="#D92435"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login"
+        android:gravity="center"
+
+        />
+    <Button
+        android:id="@+id/payment_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cafe_detail"
+        android:text="Edit Payment Details"
+        android:textAllCaps="false"
+        android:onClick="editpay"
+        android:padding="5dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#D92435"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login"
+
+        android:gravity="center"
+
+        />
+    <Button
+        android:id="@+id/menu_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment_detail"
+        android:text="Edit Menu Details"
+        android:onClick="editmenu"
+        android:textAllCaps="false"
+        android:padding="5dp"
+        android:textColor="#D92435"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login"
+
+        android:gravity="center"
+
+        />
+    <Button
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_detail"
+        android:text="Change Password"
+        android:onClick="changepass"
+        android:textAllCaps="false"
+        android:padding="5dp"
+        android:textColor="#D92435"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login"
+
+        android:gravity="center"
+
+        />
+
+
+</RelativeLayout>

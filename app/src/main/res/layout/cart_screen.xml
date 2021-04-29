@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".cart_screen"
+    android:background="#D92435">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fastfood" />
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cafeteria"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_below="@id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Starters"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/text1.1"
+        android:layout_below="@id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spring roll"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/cart1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:padding="1dp"
+        android:layout_below="@id/text1"
+        android:background="@drawable/login">
+
+        <TextView
+            android:id="@+id/decrement1"
+            android:onClick="decrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  -  "
+            android:textColor="#D92435"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/decrement1"
+            android:background="#D92435"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/increment1"
+            android:layout_toRightOf="@id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  +  "
+            android:onClick="increment"
+            android:textSize="16dp"
+            android:textColor="#D92435"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/rs1.1"
+        android:layout_below="@id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs40"
+        android:layout_toLeftOf="@id/cart1"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="21dp"
+        android:textSize="14dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/text1.2"
+        android:layout_below="@id/text1.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Egg roll"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="30dp"
+        />
+    <RelativeLayout
+        android:id="@+id/cart2"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:padding="1dp"
+        android:layout_below="@id/text1.1"
+        android:background="@drawable/login">
+        <TextView
+            android:id="@+id/decrement2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  -  "
+            android:textSize="16dp"
+            android:textColor="#D92435"/>
+
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/decrement2"
+            android:background="#D92435"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/increment2"
+            android:layout_toRightOf="@id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  +  "
+            android:textSize="16dp"
+            android:textColor="#D92435"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/rs1.2"
+    android:layout_toLeftOf="@id/cart2"
+        android:layout_below="@id/rs1.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs30"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="21dp"
+        android:textSize="14dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_below="@id/text1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bevrages"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/text2.1"
+        android:layout_below="@id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cold Coffee"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:layout_marginLeft="30dp"
+        />
+    <RelativeLayout
+        android:id="@+id/cart3"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:padding="1dp"
+        android:layout_below="@id/text2"
+        android:background="@drawable/login">
+        <TextView
+            android:id="@+id/decrement3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  -  "
+            android:textSize="16dp"
+            android:textColor="#D92435"/>
+        <TextView
+            android:id="@+id/button3"
+            android:layout_toRightOf="@id/decrement3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="16dp"
+            android:background="#D92435"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/increment3"
+            android:layout_toRightOf="@id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  +  "
+            android:textSize="16dp"
+            android:textColor="#D92435"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rs2.1"
+        android:layout_toLeftOf="@id/cart3"
+        android:layout_below="@id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs40"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="21dp"
+        android:textSize="14dp"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:id="@+id/text2.2"
+        android:layout_below="@id/text2.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coldrink"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="30dp"
+        />
+    <RelativeLayout
+        android:id="@+id/cart4"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:padding="1dp"
+        android:layout_below="@id/text2.1"
+        android:background="@drawable/login">
+        <TextView
+            android:id="@+id/decrement4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  -  "
+            android:textSize="16dp"
+            android:textColor="#D92435"/>
+        <TextView
+            android:id="@+id/button4"
+            android:layout_toRightOf="@id/decrement4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="16dp"
+            android:background="#D92435"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/increment4"
+            android:layout_toRightOf="@id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  +  "
+            android:textSize="16dp"
+            android:textColor="#D92435"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rs2.2"
+        android:layout_toLeftOf="@id/cart4"
+        android:layout_below="@id/rs2.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs30"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="21dp"
+        android:textSize="14dp"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:id="@+id/cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:onClick="next"
+        android:textColor="#D92435"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        />
+</RelativeLayout>
